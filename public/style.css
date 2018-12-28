@@ -1,0 +1,48 @@
+*{
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: rgb(40, 40, 40)
+} 
+
+body {
+  background-color:rgb(249, 249, 249);
+}
+
+h1, h2, h3 {
+  font-family: 'Staatliches', cursive;
+  color: rgb(40, 40, 40);
+  margin: 20px 0 0 0;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-left: 30px;
+}
+
+nav {
+  display: flex;
+  width: 400px;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  margin-left: 30px;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+a:hover {
+  margin-bottom: 0;
+  border-bottom: 4px solid rgb(216, 23, 23);
+}  
+
+#mapid{
+  height: 80vh;
+  margin-top: 30px;
+} 
+
