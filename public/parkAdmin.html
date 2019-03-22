@@ -6,9 +6,31 @@
   </head>
 
   <body>
-    <form>
-        
-    </form>
+    <form action="/my-handling-form-page" method="post">
+        <div>
+            <label for="city">By:</label>
+            <input type="text" id="city" name="city">
+          </div>
+        <div>
+          <label for="name">Navn på sted:</label>
+          <input type="text" id="name" name="place">
+        </div>
+        <div>
+          <label for="msg">Beskrivelse:</label>
+          <textarea id="description" name="description"></textarea>
+        </div>
+        <div>
+            <label for="long">Longitude:</label>
+            <input type="text" id="longitude" name="longitude">
+        </div>
+        <div>
+            <label for="long">Latitude:</label>
+            <input type="text" id="latitude" name="latitude">
+        </div>
+        <div class="button">
+            <button type="submit">Send inn</button>
+        </div>
+      </form>
     
   </body>
 
