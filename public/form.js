@@ -19,18 +19,16 @@ let descriptionInput = document.querySelector("#description");
 //let imageInput = document.querySelector("#picture"); not relevant yet
 let longitudeInput = document.querySelector("#longitude");
 let latitudeInput = document.querySelector("#latitude");
-let submitButton = document.querySelector("#button");
+let submitButton = document.querySelector("#submit_form");
 
 submitButton.addEventListener("click", function() {
-    console.log("adding:");
-
-    // collectionRef.doc().set({
-    //     city: cityInput.value,
-    //     name: nameInput.value,
-    //     description: descriptionInput.value,
-    //     longitude: longitudeInput.value,
-    //     latitude: latitudeInput.value
-    // }).then(()=>console.log("Object sent!")
-    // ).catch((error)=>console.log("Got an error: ", error)
-    // );
+    collectionRef.doc().set({
+        city: cityInput.value,
+        name: nameInput.value,
+        description: descriptionInput.value,
+        longitude: longitudeInput.value,
+        latitude: latitudeInput.value
+    }).then(()=>console.log("Object sent!")
+    ).catch((error)=>console.log("Got an error: ", error)
+    );
 });
