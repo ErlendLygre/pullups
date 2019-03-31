@@ -10,34 +10,63 @@
   </head>
 
   <body>
-        <fieldset>
-          <legend>Info om park</legend>
-          <label for="city">By:</label>
-          <input type="text" id="city" name="city">
-        
-          <label for="name">Navn på sted:</label>
-          <input type="text" id="name" name="place">
-        
-          <label for="description">Beskrivelse:</label>
-          <textarea id="description" name="description"></textarea>
 
-          <label for="picture">Bilde:</label>
-          <input type="file" id="picture" name="file" disabled> <!-- temporary disabled while figuring out files in relation to firebase -->
+    <section class="parks-container">
+      <section class="parks" id="1">
+          <div class="name picture">
+            <h3>Navn</h3>
+            <img src="" alt="bilde av park">
+          </div>
+          <div class="info">
+            <label>
+              Beskrivelse:
+              <input type="text" class="description">
+            </label>
+            Lat
+            Longitude
+            By
+          </div>
+          <div class="edit">
+            Lagre
+            Slett
+          </div>
+        </section>
 
-        </fieldset>
-        <fieldset>
-          <legend>Koordinater</legend>
-            <label for="longitude">Longitude:</label>
-            <input type="number" id="longitude" name="longitude">
+      <section class="parks" id="2">
 
-            <label for="latitude">Latitude:</label>
-            <input type="number" id="latitude" name="latitude">
-        </fieldset>
 
-        <div class="button">
-            <button name="submit" id="submit_form">Send inn</button>
-        </div>
+      </section>
+    </section>
+
+
+    <fieldset>
+      <legend>Info om park</legend>
+      <label for="city">By:</label>
+      <input type="text" id="city" name="city">
     
+      <label for="name">Navn på sted:</label>
+      <input type="text" id="name" name="place">
+    
+      <label for="description">Beskrivelse:</label>
+      <textarea id="description" name="description"></textarea>
+
+      <label for="picture">Bilde:</label>
+      <input type="file" id="picture" name="file" disabled> <!-- temporary disabled while figuring out files in relation to firebase -->
+
+    </fieldset>
+    <fieldset>
+      <legend>Koordinater</legend>
+        <label for="longitude">Longitude:</label>
+        <input type="number" id="longitude" name="longitude">
+
+        <label for="latitude">Latitude:</label>
+        <input type="number" id="latitude" name="latitude">
+    </fieldset>
+
+    <div class="button">
+        <button name="submit" id="submit_form">Send inn</button>
+    </div>
+
   </body>
   <script src="form.js"></script>
 </html>
