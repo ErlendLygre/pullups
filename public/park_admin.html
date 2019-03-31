@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Staatliches" rel="stylesheet">
+  </head>
+
+  <body>
+    <form action="/my-handling-form-page" method="post">
+        <fieldset>
+          <legend>Info om park</legend>
+          <label for="city">By:</label>
+          <input type="text" id="city" name="city">
+        
+          <label for="name">Navn på sted:</label>
+          <input type="text" id="name" name="place">
+        
+          <label for="description">Beskrivelse:</label>
+          <textarea id="description" name="description"></textarea>
+
+          <label for="picture">Bilde:</label>
+          <input type="file" id="picture" name="file" disabled> <!-- temporary disabled while figuring out files in relation to firebase -->
+
+        </fieldset>
+        <fieldset>
+          <legend>Koordinater</legend>
+            <label for="longitude">Longitude:</label>
+            <input type="number" id="longitude" name="longitude">
+
+            <label for="latitude">Latitude:</label>
+            <input type="number" id="latitude" name="latitude">
+        </fieldset>
+
+        <div class="button">
+            <button name="submit">Send inn</button>
+        </div>
+      </form>
+    
+  </body>
+  <script src="form.js"></script>
+</html>
