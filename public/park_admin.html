@@ -23,13 +23,16 @@
               Beskrivelse:
               <input type="text" class="description">
             </label>
-            Lat
-            Longitude
-            By
+            <label for="longitude">Long:</label>
+            <input type="number" id="longitude" name="longitude">
+            <label for="latitude">Lat:</label>
+            <input type="number" id="latitude" name="latitude">
+            <label for="city">By:</label>
+            <input type="text" id="city" name="city">
           </section>
           <section class="edit">
-            Lagre
-            Slett
+            <button name="submit" id="submit_form">Lagre</button>
+            <button name="delete" id="delete_park">Slett</button>
           </section>
       </article>
 
@@ -38,36 +41,6 @@
 
       </article>
     </main>
-
-
-    <fieldset>
-      <legend>Info om park</legend>
-      <label for="city">By:</label>
-      <input type="text" id="city" name="city">
-    
-      <label for="name">Navn på sted:</label>
-      <input type="text" id="name" name="place">
-    
-      <label for="description">Beskrivelse:</label>
-      <textarea id="description" name="description"></textarea>
-
-      <label for="picture">Bilde:</label>
-      <input type="file" id="picture" name="file" disabled> <!-- temporary disabled while figuring out files in relation to firebase -->
-
-    </fieldset>
-    <fieldset>
-      <legend>Koordinater</legend>
-        <label for="longitude">Longitude:</label>
-        <input type="number" id="longitude" name="longitude">
-
-        <label for="latitude">Latitude:</label>
-        <input type="number" id="latitude" name="latitude">
-    </fieldset>
-
-    <div class="button">
-        <button name="submit" id="submit_form">Send inn</button>
-    </div>
-
   </body>
   <script src="form.js"></script>
 </html>
